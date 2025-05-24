@@ -85,7 +85,7 @@ T Stack<T, ARRAYSIZE>::pop() {
 template <class T, int ARRAYSIZE>
 T Stack<T, ARRAYSIZE>::getTop() {
     if(isEmpty()) {
-        throw StackException("[pop] The stack is empty; no elements to pop.");
+        throw StackException("[getTop] The stack is empty.");
     }
 
     return data[top];
